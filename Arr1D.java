@@ -1,18 +1,23 @@
+
 import java.util.Scanner;
+
 public class Arr1D {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter no. of elements: ");
-        int n=sc.nextInt();
-        int[] array=new int[n];
+        System.out.println("Enter number of elements: ");
+        int numElements = sc.nextInt(); 
+        int[] arr = new int[numElements]; // Initialize array
         System.out.println("Enter elements: ");
-        for(int i=0;i<n;i++){
-            array[i]=sc.nextInt();
+        
+        for (int i = 0; i < numElements; i++) {
+            arr[i] = sc.nextInt(); // Input array elements
         }
-        System.out.println("the elemens of the array are: ");
-        for(int i=0;i<n;i++){
-            System.out.println(array[i]+" ");
+        
+        System.out.println("The elements of the array are: ");
+        for (int i = 0; i < numElements; i++) {
+            System.out.println(arr[i] + " "); // Print each element
         }
-        sc.close();
+        
+        sc.close(); 
     }
 }
